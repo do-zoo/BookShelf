@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <a href="/" class="brand link-no-style">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-icon">
+          <path
+            d="M0 20C0 10.5719 0 5.85786 2.92893 2.92893C5.85786 0 10.5719 0 20 0C29.4281 0 34.1421 0 37.0711 2.92893C40 5.85786 40 10.5719 40 20C40 29.4281 40 34.1421 37.0711 37.0711C34.1421 40 29.4281 40 20 40C10.5719 40 5.85786 40 2.92893 37.0711C0 34.1421 0 29.4281 0 20Z"
+            fill="#FFA500" />
+          <path
+            d="M24 26C24.5523 26 25.0101 26.4521 24.9004 26.9934C24.7065 27.9494 24.2355 28.8355 23.5355 29.5355C22.5979 30.4732 21.3261 31 20 31C18.6739 31 17.4022 30.4732 16.4645 29.5355C15.7645 28.8355 15.2935 27.9494 15.0997 26.9934C14.9899 26.4521 15.4477 26 16 26H24Z"
+            fill="#1F4690" />
+          <path
+            d="M26.1023 17.7765C25.5688 17.9194 25.2421 18.4775 25.5126 18.959C25.7973 19.4658 26.1911 19.9081 26.6702 20.2514C27.4224 20.7904 28.3382 21.052 29.2617 20.9914C30.1851 20.9309 31.059 20.5521 31.7344 19.9195C32.4099 19.2869 32.845 18.4396 32.9658 17.5221C33.0866 16.6046 32.8856 15.6736 32.3969 14.8877C31.9082 14.1019 31.1621 13.5098 30.2858 13.2123C29.4095 12.9148 28.4572 12.9304 27.5911 13.2564C27.0395 13.464 26.5447 13.7893 26.1385 14.2051C25.7526 14.6002 25.9237 15.2239 26.402 15.5L26.9093 15.7929C27.6808 16.2384 27.5287 17.3943 26.6681 17.6249L26.1023 17.7765Z"
+            fill="#1F4690" />
+          <path
+            d="M13.8978 17.7765C14.4313 17.9194 14.758 18.4775 14.4875 18.959C14.2028 19.4658 13.809 19.9081 13.33 20.2514C12.5778 20.7904 11.6619 21.052 10.7385 20.9914C9.81502 20.9309 8.94113 20.5521 8.2657 19.9195C7.59027 19.2869 7.15508 18.4396 7.03429 17.5221C6.9135 16.6046 7.11457 15.6736 7.60326 14.8877C8.09194 14.1019 8.838 13.5098 9.71431 13.2123C10.5906 12.9148 11.543 12.9304 12.4091 13.2564C12.9606 13.464 13.4555 13.7893 13.8617 14.2051C14.2476 14.6002 14.0764 15.2239 13.5981 15.5L13.0908 15.7929C12.3193 16.2384 12.4715 17.3943 13.332 17.6249L13.8978 17.7765Z"
+            fill="#1F4690" />
+        </svg>
+        <h1 class="brand-name hide-mobile">Bookshelf</h1>
+      </a>
+      <div class="search-bar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.325 14.899L21.705 20.279C21.8941 20.4682 22.0003 20.7248 22.0002 20.9923C22.0001 21.2599 21.8937 21.5164 21.7045 21.7055C21.5153 21.8946 21.2587 22.0008 20.9912 22.0007C20.7236 22.0006 20.4671 21.8942 20.278 21.705L14.898 16.325C13.2897 17.5707 11.2673 18.1569 9.24214 17.9643C7.21699 17.7718 5.34124 16.815 3.99649 15.2886C2.65174 13.7622 1.939 11.7808 2.00326 9.74753C2.06753 7.71427 2.90396 5.78185 4.34242 4.34339C5.78087 2.90494 7.71329 2.0685 9.74656 2.00424C11.7798 1.93998 13.7612 2.65272 15.2876 3.99747C16.814 5.34222 17.7708 7.21796 17.9634 9.24312C18.1559 11.2683 17.5697 13.2907 16.324 14.899H16.325ZM10 16C11.5913 16 13.1174 15.3678 14.2427 14.2426C15.3679 13.1174 16 11.5913 16 9.99999C16 8.40869 15.3679 6.88257 14.2427 5.75735C13.1174 4.63213 11.5913 3.99999 10 3.99999C8.40871 3.99999 6.88259 4.63213 5.75737 5.75735C4.63215 6.88257 4.00001 8.40869 4.00001 9.99999C4.00001 11.5913 4.63215 13.1174 5.75737 14.2426C6.88259 15.3678 8.40871 16 10 16V16Z"
+            fill="currentColor" />
+        </svg>
+
+        <input type="text" class="search-input" placeholder="Search Your Book">
+      </div>
+    </div>
+    <div class="right">
+      <button class="add-book-btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="add-book-icon icon">
+          <path
+            d="M7.20005 2.39999C6.56353 2.39999 5.95308 2.65285 5.50299 3.10294C5.05291 3.55302 4.80005 4.16347 4.80005 4.79999V19.2C4.80005 19.8365 5.05291 20.447 5.50299 20.8971C5.95308 21.3471 6.56353 21.6 7.20005 21.6H12.3084C12.0028 21.2298 11.7385 20.8275 11.52 20.4H7.20005C6.88179 20.4 6.57656 20.2736 6.35152 20.0485C6.12648 19.8235 6.00005 19.5183 6.00005 19.2H11.0484C10.7275 18.0695 10.7142 16.8739 11.0099 15.7366C11.3057 14.5993 11.8997 13.5615 12.7306 12.7306C13.5616 11.8996 14.5993 11.3056 15.7366 11.0099C16.8739 10.7142 18.0696 10.7275 19.2 11.0484V4.79999C19.2 4.16347 18.9472 3.55302 18.4971 3.10294C18.047 2.65285 17.4366 2.39999 16.8 2.39999H7.20005ZM8.10005 5.39999H15.9C16.1387 5.39999 16.3677 5.49482 16.5364 5.6636C16.7052 5.83238 16.8 6.0613 16.8 6.29999C16.8 6.53869 16.7052 6.76761 16.5364 6.93639C16.3677 7.10517 16.1387 7.19999 15.9 7.19999H8.10005C7.86135 7.19999 7.63244 7.10517 7.46365 6.93639C7.29487 6.76761 7.20005 6.53869 7.20005 6.29999C7.20005 6.0613 7.29487 5.83238 7.46365 5.6636C7.63244 5.49482 7.86135 5.39999 8.10005 5.39999ZM22.8 17.4C22.8 18.8322 22.2311 20.2057 21.2184 21.2184C20.2057 22.2311 18.8322 22.8 17.4 22.8C15.9679 22.8 14.5944 22.2311 13.5817 21.2184C12.569 20.2057 12 18.8322 12 17.4C12 15.9678 12.569 14.5943 13.5817 13.5816C14.5944 12.5689 15.9679 12 17.4 12C18.8322 12 20.2057 12.5689 21.2184 13.5816C22.2311 14.5943 22.8 15.9678 22.8 17.4ZM18 15C18 14.8409 17.9368 14.6883 17.8243 14.5757C17.7118 14.4632 17.5592 14.4 17.4 14.4C17.2409 14.4 17.0883 14.4632 16.9758 14.5757C16.8633 14.6883 16.8 14.8409 16.8 15V16.8H15C14.8409 16.8 14.6883 16.8632 14.5758 16.9757C14.4633 17.0883 14.4 17.2409 14.4 17.4C14.4 17.5591 14.4633 17.7117 14.5758 17.8243C14.6883 17.9368 14.8409 18 15 18H16.8V19.8C16.8 19.9591 16.8633 20.1117 16.9758 20.2243C17.0883 20.3368 17.2409 20.4 17.4 20.4C17.5592 20.4 17.7118 20.3368 17.8243 20.2243C17.9368 20.1117 18 19.9591 18 19.8V18H19.8C19.9592 18 20.1118 17.9368 20.2243 17.8243C20.3368 17.7117 20.4 17.5591 20.4 17.4C20.4 17.2409 20.3368 17.0883 20.2243 16.9757C20.1118 16.8632 19.9592 16.8 19.8 16.8H18V15Z"
+            fill="currentColor" />
+        </svg>
+        <span class="hide-mobile">Add Book</span>
+      </button>
+    </div>
+  </header>
+  <main id="content">
+    <section id="read">
+      <div class="header-content">
+        <h1>Read</h1>
+        <p>Show All</p>
+      </div>
+      <div class="items-wrapper">
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt="">
+          </div>
+          <div class="item-info">
+            <div class="title">
+              <h2>The Hobbit</h2>
+            </div>
+            <div class="info">
+              <p>J.R.R. Tolkien | 2020</p>
+              <p class="status sts-read">Read</p>
+            </div>
+            <div class="action">
+              <button class="btn-action btn-change-sts unread">
+                <span>Unread</span>
+              </button>
+              <button class="btn-action btn-other-act">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="unread">
+      <div class="header-content">
+        <h1>Unread</h1>
+        <p>Show All</p>
+      </div>
+      <div class="items-wrapper">
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt="">
+          </div>
+          <div class="item-info">
+            <div class="title">
+              <h2>The Hobbit</h2>
+            </div>
+            <div class="info">
+              <p>J.R.R. Tolkien | 2020</p>
+              <p class="status sts-read">Read</p>
+            </div>
+            <div class="action">
+              <button class="btn-action btn-change-sts unread">
+                <span>Unread</span>
+              </button>
+              <div class="btn-action btn-other-act">
+                <span>Action</span>
+              </div>
+              <div class="other-act">
+                <button class="btn-action btn-edit">
+                  <span>Edit</span>
+                </button>
+                <button class="btn-action btn-delete">
+                  <span>Delete</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="form">
+      <h1 class="title-form">Add Book</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" placeholder="Author">
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="text" name="year" id="year" placeholder="Year">
+        </div>
+        <div class="form-group">
+          <label for="cover">Cover</label>
+          <input type="text" name="cover" id="cover" placeholder="insert Image URL">
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </aside>
+  </main>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
