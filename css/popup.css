@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #1f4690;
+  --color-secondary: #ffa500;
+  --color-secondary-rgb: 255, 165, 0;
+
+  --color-tertiary: #3a5ba0;
+  --color-quaternary: #ffe5b4;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #838383;
+  --color-success: #02c266;
+  --color-danger: #c20275;
+}

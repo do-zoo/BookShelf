@@ -220,6 +220,10 @@ input[type="text"].search-input {
   color: var(--color-success);
 }
 
+.sts-unread {
+  color: var(--color-danger);
+}
+
 .action {
   position: relative;
   display: flex;
@@ -287,19 +291,24 @@ input[type="text"].search-input {
 }
 
 .btn-edit {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 .btn-edit:hover {
-  background-color: rgba(10, 39, 100, 0.9);
+  background-color: rgba(10, 39, 100, 0.9) !important;
 }
 
 .btn-delete {
-  background-color: rgba(219, 11, 80, 0.9);
+  background-color: rgba(219, 11, 80, 0.9) !important;
 }
 
 .btn-delete:hover {
-  background-color: rgba(143, 8, 53, 0.9);
+  background-color: rgba(143, 8, 53, 0.9) !important;
+}
+
+.no-item {
+  grid-column: 1 / span 5;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
