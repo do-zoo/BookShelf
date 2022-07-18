@@ -97,16 +97,16 @@ function makeBookItem(data) {
   if (data.isComplete) {
     itemStatus.classList.add("sts-read");
     itemStatus.innerText = "Read";
-    btnChangeStatus.classList.add("read");
-    btnChangeStatus.innerText = "Read";
+    btnChangeStatus.classList.add("unread");
+    btnChangeStatus.innerText = "Unread";
     btnChangeStatus.addEventListener("click", () => {
       addBookToIncompleteList(data.id);
     });
   } else {
     itemStatus.classList.add("sts-unread");
     itemStatus.innerText = "Unread";
-    btnChangeStatus.classList.add("unread");
-    btnChangeStatus.innerText = "Unread";
+    btnChangeStatus.classList.add("read");
+    btnChangeStatus.innerText = "Read";
     btnChangeStatus.addEventListener("click", () => {
       addBookToCompleteList(data.id);
     });
